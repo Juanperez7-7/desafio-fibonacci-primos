@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Labs - Optimización de Oro</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="panel-plataforma-central">
+        <header class="banner-estatidicas-cyber">
+            <h1>📈 Análisis de Curvas: Escalado de Oro</h1>
+            <span class="tag-firma-usuario">Desarrollado por: Juan de Dios Pérez Monroy 👑</span>
+        </header>
+
+        <section class="modulo-analisis-tarjeta">
+            <h2 class="header-seccion-titulo">📋 Planteamiento de la Simulación</h2>
+            <p class="parrafo-explicativo">
+                <b>El Problema:</b> Calcular de forma exacta el costo de las mejoras de nivel cuando la economía interna sufre incrementos acumulativos severos en fases avanzadas de la partida (Late Game).
+                <br><br>
+                <b>La Solución:</b> Evaluamos el presupuesto total ingresado frente a una progresión basada en la secuencia de Fibonacci para ver cuántas mejoras consecutivas puede adquirir un jugador antes de entrar en déficit de caja.
+            </p>
+        </section>
+
+        <section class="modulo-analisis-tarjeta">
+            <h2 class="header-seccion-titulo">📚 Comportamiento de Memoria</h2>
+            <p class="parrafo-explicativo">
+                El motor matemático calcula la sucesión sumando de manera iterativa los dos valores predecesores en el ciclo de ejecución. Para cumplir con las restricciones de optimización y no usar vectores dinámicos, se gestionan únicamente tres variables independientes que rotan sus valores en cada vuelta del bucle.
+            </p>
+        </section>
+
+        <section class="modulo-analisis-tarjeta">
+            <h2 class="header-seccion-titulo">🕹️ Consola de Simulación Económica</h2>
+            <form class="interfaz-formulario-cyber" onsubmit="event.preventDefault(); simularEscaladoOro();">
+                <label class="parrafo-explicativo">Ingresa la cantidad de Oro total acumulado (Gold):</label>
+                <input type="number" id="inputFondosOro" class="control-input-numerico" min="1" required placeholder="Ej. 250">
+                <button type="submit" class="boton-ejecutar-cyber">Procesar Rendimiento de Compra</button>
+            </form>
+
+            <div class="consola-diagnostico-salida">
+                <h3 class="header-seccion-titulo" style="font-size:1.1rem; color: #00f5d4;">📊 Reporte de Inventario y Caja:</h3>
+                <div id="pantallaResultadoOro" class="pizarra-codigo-resultados">Establece un capital inicial para calcular los márgenes...</div>
+            </div>
+        </section>
+
+        <footer class="pie-inferior-cyber">
+            <div class="redes-links-github">
+                <a href="https://github.com/Juanperez7-7/desafio-fibonacci-primos" target="_blank">📦 Código de este Módulo</a>
+            </div>
+            <a href="../index.html" class="btn-volver-atras">← Volver a la Central Labs</a>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

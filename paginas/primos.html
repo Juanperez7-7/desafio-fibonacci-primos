@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Labs - Token Security</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="panel-plataforma-central">
+        <header class="banner-estatidicas-cyber">
+            <h1>🛡️ Sistema Antihack: Validación de Token</h1>
+            <span class="tag-firma-usuario">Desarrollado por: Juan de Dios Pérez Monroy 👑</span>
+        </header>
+
+        <section class="modulo-analisis-tarjeta">
+            <h2 class="header-seccion-titulo">📋 Planteamiento de Seguridad</h2>
+            <p class="parrafo-explicativo">
+                <b>El Problema:</b> Las brechas de seguridad exponen las credenciales de los usuarios si estos usan patrones numéricos correlativos que pueden romperse mediante ataques de fuerza bruta.
+                <br><br>
+                <b>La Solución:</b> Implementamos una prueba de primalidad estricta para auditar los códigos de seguridad. Al comprobar que la clave es un número primo, garantizamos que no puede ser dividida por factores de multiplicación rápidos.
+            </p>
+        </section>
+
+        <section class="modulo-analisis-tarjeta">
+            <h2 class="header-seccion-titulo">🎛️ Consola de Auditoría Criptográfica</h2>
+            <form class="interfaz-formulario-cyber" onsubmit="event.preventDefault(); procesarAuditoriaToken();">
+                <label class="parrafo-explicativo">Introduce el PIN de cuenta a auditar:</label>
+                <input type="number" id="inputPinSeguridad" class="control-input-numerico" min="1" required placeholder="Ej. 43">
+                <button type="submit" class="boton-ejecutar-cyber">Verificar Nivel de Blindaje</button>
+            </form>
+
+            <div class="consola-diagnostico-salida">
+                <h3 class="header-seccion-titulo" style="font-size:1.1rem; color: #00f5d4;">🛡️ Estado del Servidor:</h3>
+                <div id="pantallaResultadoPin" class="pizarra-codigo-resultados">Esperando clave de acceso numérico...</div>
+            </div>
+        </section>
+
+        <footer class="pie-inferior-cyber">
+            <div class="redes-links-github">
+                <a href="https://github.com/Juanperez7-7/desafio-fibonacci-primos" target="_blank">📦 Código de este Módulo</a>
+            </div>
+            <a href="../index.html" class="btn-volver-atras">← Volver a la Central Labs</a>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

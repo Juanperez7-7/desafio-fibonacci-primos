@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;700&display=swap');
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Fondo Oscuro Midnight Gamer */
+body {
+    color: #e2e8f0;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    padding: 40px 15px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f111a 0%, #1a1d29 100%);
+    background-attachment: fixed;
+}
+
+/* Bloque Contenedor Central */
+.panel-plataforma-central { 
+    width: 100%; 
+    max-width: 820px; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Encabezado Principal */
+.banner-estatidicas-cyber {
+    background: #151824;
+    border: 2px solid #2e344d;
+    border-radius: 20px;
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+}
+
+.banner-estatidicas-cyber h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: #00d2ff;
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+.banner-estatidicas-cyber p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.tag-firma-usuario {
+    display: inline-block;
+    background: #1e2235;
+    color: #00f5d4;
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 16px;
+    border: 1px solid #00f5d4;
+    text-shadow: 0 0 8px rgba(0, 245, 212, 0.4);
+}
+
+/* Tarjetas Informativas */
+.modulo-analisis-tarjeta {
+    background: #151824;
+    border-radius: 18px;
+    padding: 32px;
+    margin-bottom: 26px;
+    border: 1px solid #2e344d;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-seccion-titulo {
+    font-family: 'Fredoka', sans-serif;
+    color: #00d2ff;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.parrafo-explicativo { 
+    line-height: 1.7; 
+    font-size: 1.05rem; 
+    color: #cbd5e1; 
+}
+
+.parrafo-explicativo b {
+    color: #00f5d4;
+}
+
+/* Menú de Módulos (Bloques Verticales Sin Flex/Grid) */
+.menu-bloques-verticales {
+    margin-top: 20px;
+}
+
+.bloque-modulo-enlace {
+    background: #151824;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #2e344d;
+    margin-bottom: 22px;
+    text-align: center;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bloque-modulo-enlace:hover {
+    transform: translateY(-4px);
+}
+
+.bloque-modulo-enlace h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+/* Inputs de texto/número */
+.interfaz-formulario-cyber { 
+    margin: 18px 0; 
+}
+
+.control-input-numerico {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #2e344d;
+    background: #0f111a;
+    border-radius: 12px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.05rem;
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 15px;
+    transition: border-color 0.2s;
+}
+
+.control-input-numerico:focus { 
+    border-color: #00d2ff; 
+}
+
+/* Botones y Enlaces de Navegación */
+.link-navegacion-cyber, .boton-ejecutar-cyber {
+    background: #1e2235;
+    color: #ffffff;
+    padding: 14px 28px;
+    border: 1px solid #2e344d;
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.link-navegacion-cyber:hover, .boton-ejecutar-cyber:hover { 
+    background: #00d2ff;
+    color: #0f111a;
+    border-color: #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+/* Consola de Resultados */
+.consola-diagnostico-salida {
+    background: #0f111a;
+    border: 2px dashed #2e344d;
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 25px;
+}
+
+.pizarra-codigo-resultados {
+    font-family: monospace;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    color: #a7f3d0; /* Texto verde consola */
+    text-align: left;
+}
+
+/* Pie de Página */
+.pie-inferior-cyber { 
+    margin-top: 50px; 
+    text-align: center; 
+    border-top: 1px solid #2e344d;
+    padding-top: 25px;
+}
+
+.redes-links-github { 
+    display: block;
+}
+
+.redes-links-github a { 
+    text-decoration: none; 
+    color: #00d2ff; 
+    font-weight: 700; 
+    font-size: 1.05rem; 
+    margin: 0 18px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.redes-links-github a:hover {
+    color: #00f5d4;
+}
+
+.btn-volver-atras { 
+    display: inline-block; 
+    margin-top: 18px; 
+    text-decoration: none; 
+    color: #94a3b8; 
+    font-weight: 700; 
+    transition: color 0.2s;
+}
+
+.btn-volver-atras:hover {
+    color: #ffffff;
+}
